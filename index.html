@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI & CS Learning Hub</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="header">
+    <h1>Explore Learning Paths</h1>
+    <div class="hero-images">
+      <img src="karpathy.jpg" alt="Karpathy">
+      <img src="gennedy.jpg" alt="Gennedy">
+    </div>
+  </div>
+
+  <section class="intro">
+    <p>Welcome to the AI & CS Learning Hub! Here you can explore key topics like Machine Learning, Entrepreneurship, Computer Vision, Reinforcement Learning, Deep Learning, Competitive Programming, and Data Structures & Algorithms. Use the built-in chatbot at the bottom anytime you need guidance. Scroll to discover curated resources and our list of seminal ML papers at the end.</p>
+  </section>
+
+  <div class="tabs">
+    <div class="tab">
+      <h2>Machine Learning</h2>
+      <ul>
+        <li>Start with Python basics</li>
+        <li>Understand statistics & probability</li>
+        <li>Learn NumPy, pandas, matplotlib</li>
+        <li>Dive into scikit-learn & ML algorithms</li>
+        <li>Work on Kaggle projects</li>
+      </ul>
+      <button class="ytbtn" onclick="openYouTube('machine learning for beginners')">Watch on YouTube</button>
+    </div>
+
+    <div class="tab">
+      <h2>Entrepreneurship</h2>
+      <ul>
+        <li>Understand business models</li>
+        <li>Learn marketing and growth</li>
+        <li>Study funding & pitches</li>
+        <li>Build MVPs & test ideas</li>
+        <li>Follow startup case studies</li>
+      </ul>
+      <button class="ytbtn" onclick="openYouTube('entrepreneurship for beginners')">Watch on YouTube</button>
+    </div>
+
+    <div class="tab">
+      <h2>Computer Vision</h2>
+      <ul>
+        <li>Understand image basics</li>
+        <li>Learn OpenCV and PIL</li>
+        <li>Use CNNs and pretrained models</li>
+        <li>Try object detection projects</li>
+        <li>Explore facial recognition systems</li>
+      </ul>
+      <button class="ytbtn" onclick="openYouTube('computer vision projects')">Watch on YouTube</button>
+    </div>
+
+    <div class="tab">
+      <h2>Reinforcement Learning</h2>
+      <ul>
+        <li>Understand agents and environments</li>
+        <li>Learn Markov Decision Processes</li>
+        <li>Explore Q-learning and Deep Q-networks</li>
+        <li>Apply OpenAI Gym</li>
+        <li>Implement simple games</li>
+      </ul>
+      <button class="ytbtn" onclick="openYouTube('reinforcement learning tutorial')">Watch on YouTube</button>
+    </div>
+
+    <div class="tab">
+      <h2>Deep Learning</h2>
+      <ul>
+        <li>Start with neural networks</li>
+        <li>Understand backpropagation</li>
+        <li>Learn TensorFlow and PyTorch</li>
+        <li>Build CNNs, RNNs, and GANs</li>
+        <li>Join deep learning communities</li>
+      </ul>
+      <button class="ytbtn" onclick="openYouTube('deep learning course')">Watch on YouTube</button>
+    </div>
+
+    <div class="tab">
+      <h2>Competitive Programming</h2>
+      <ul>
+        <li>Master basic algorithms</li>
+        <li>Solve problems on Codeforces</li>
+        <li>Focus on time complexity</li>
+        <li>Join online contests</li>
+        <li>Use C++ STL or Python tricks</li>
+      </ul>
+      <button class="ytbtn" onclick="openYouTube('competitive programming for beginners')">Watch on YouTube</button>
+    </div>
+
+    <div class="tab">
+      <h2>Data Structures & Algorithms</h2>
+      <ul>
+        <li>Learn arrays, stacks, queues</li>
+        <li>Master trees and graphs</li>
+        <li>Understand recursion and DP</li>
+        <li>Practice on LeetCode and GFG</li>
+        <li>Build strong logic and debugging</li>
+      </ul>
+      <button class="ytbtn" onclick="openYouTube('DSA tutorial')">Watch on YouTube</button>
+    </div>
+  </div>
+
+  <section id="chatbot">
+    <h2>Ask Helper (GPT)</h2>
+    <textarea id="user-input" placeholder="Ask something..."></textarea>
+    <button onclick="askHelper()">Submit</button>
+    <div id="chat-response"></div>
+  </section>
+
+  <section id="papers">
+    <h2>Top 10 Seminal ML Papers</h2>
+    <ol>
+      <li><em>Attention Is All You Need</em> – Ashish Vaswani et al.</li>
+      <li><em>Deep Residual Learning for Image Recognition</em> – Kaiming He et al.</li>
+      <li><em>Generative Adversarial Nets</em> – Ian Goodfellow et al.</li>
+      <li><em>Deep Learning</em> – Yann LeCun, Yoshua Bengio & Geoffrey Hinton</li>
+      <li><em>Adam: A Method for Stochastic Optimization</em> – Diederik P. Kingma & Jimmy Ba</li>
+      <li><em>ImageNet Classification with Deep Convolutional Neural Networks</em> – Alex Krizhevsky et al.</li>
+      <li><em>BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding</em> – Jacob Devlin et al.</li>
+      <li><em>Sequence to Sequence Learning with Neural Networks</em> – Ilya Sutskever et al.</li>
+      <li><em>Playing Atari with Deep Reinforcement Learning</em> – Volodymyr Mnih et al.</li>
+      <li><em>Batch Normalization</em> – Sergey Ioffe & Christian Szegedy</li>
+    </ol>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
