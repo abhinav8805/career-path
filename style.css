@@ -65,7 +65,6 @@ ul {
   border-radius: 5px;
   cursor: pointer;
 }
-/* Add this for the intro and papers section */
 .intro, #papers {
   padding: 20px;
   max-width: 900px;
@@ -90,7 +89,6 @@ ul {
   line-height: 1.6;
 }
 
-/* Improve tab layout on smaller screens */
 @media (max-width: 768px) {
   .tabs {
     flex-direction: column;
@@ -149,7 +147,7 @@ ul {
   border: 2px solid #d3a5f2;
 }
 
-/* Chatbot styles */
+
 #chatbot {
   background-color: #1e1e1e;
   padding: 20px;
@@ -189,4 +187,9 @@ ul {
   padding: 10px;
   border-radius: 6px;
   color: #eee;
+}
+
+.intro {
+
+  justify-content: center;
 }
